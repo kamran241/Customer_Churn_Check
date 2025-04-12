@@ -34,3 +34,39 @@ Follow these steps to set up the project:
    
    git clone https://github.com/kamran241/Customer_Churn_Check.git
    cd customer_churn_chek
+
+2. **Install Python 3.13.3**:
+
+   Verify:
+   python --version
+
+3. **Install Dependencies**:
+
+   Install required packages
+
+   pip install -r requirements.txt
+
+4. **Verify Package Versions**
+
+   Confirm that installed packages match the required versions
+      pip list | grep -E "Flask|pandas|numpy|scikit-learn|joblib|streamlit|Werkzeug|python-dotenv|gunicorn"
+
+   
+ **after installing dependencies and clone it to your local you have just chance the base dir location from app.py ""C:\Users\kamra\OneDrive\Desktop\churn model"" this to your local base directory location**
+
+
+ ## How TO Run
+
+ 1. **Run the Flask API**
+
+      Run:
+       python app.py
+
+2. **Run the Streamlit App**
+
+   Run:
+     streamlit run frontend.py
+      
+
+ 
+   
