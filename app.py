@@ -16,7 +16,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Define file paths
-BASE_DIR = r"C:\Users\kamra\OneDrive\Desktop\churn model"
+BASE_DIR = r"C:\Users\kamra\OneDrive\Desktop\churn model\model"
 MODEL_PATH = os.path.join(BASE_DIR, 'churn_model.pkl')
 SCALER_PATH = os.path.join(BASE_DIR, 'scaler.pkl')
 FEATURES_PATH = os.path.join(BASE_DIR, 'feature_columns.pkl')
