@@ -1,0 +1,16 @@
+customerID,gender,SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges
+CUST101,Male,0,Yes,No,6,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,Yes,Credit card (automatic),85.5,513.0
+CUST102,Female,1,No,Yes,24,Yes,No,DSL,Yes,No,Yes,Yes,No,No,One year,No,Bank transfer (automatic),55.0,1320.0
+CUST103,Male,0,Yes,Yes,60,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check,110.75,6645.0
+CUST104,Female,0,No,No,1,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check,70.25,70.25
+CUST105,Male,1,Yes,No,48,No,No internet service,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check,19.75,948.0
+CUST106,Female,0,No,Yes,9,Yes,No,DSL,No,Yes,No,No,No,Yes,Month-to-month,Yes,Mailed check,50.5,454.5
+CUST107,Male,1,Yes,No,30,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,No,One year,Yes,Bank transfer (automatic),95.0,2850.0
+CUST108,Female,0,Yes,Yes,72,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic),20.0,1440.0
+CUST109,Male,0,No,No,3,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check,90.0,270.0
+CUST110,Female,1,Yes,No,18,No,No phone service,DSL,Yes,No,No,Yes,No,No,One year,No,Mailed check,40.25,724.5
+CUST111,Male,0,Yes,Yes,36,Yes,No,Fiber optic,No,Yes,Yes,No,Yes,No,Two year,Yes,Credit card (automatic),80.5,2898.0
+CUST112,Female,0,No,No,4,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check,45.0,180.0
+CUST113,Male,1,No,Yes,54,Yes,Yes,Fiber optic,Yes,Yes,No,Yes,No,Yes,One year,Yes,Bank transfer (automatic),105.25,5677.5
+CUST114,Female,0,Yes,No,12,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check,21.0,252.0
+CUST115,Male,0,No,No,15,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,No,Month-to-month,Yes,Electronic check,85.75,1286.25
