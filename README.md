@@ -51,7 +51,7 @@ Follow these steps to set up the project on your local machine:
        Verify installation:
 
    ```bash
-      python --version  ## this will show you the version of python
+   python --version  ## this will show you the version of python
 
 5. **Install Dependencies**
     Install required packages:
@@ -96,26 +96,27 @@ To deploy the project in a Docker container on a Linux system, follow these step
 **2.Create a Dockerfile:**
   in the project root, create a file named Dockerfile with the following content:
     ```bash
+  
     FROM python:3.13.3-slim
-
+   
     WORKDIR /app
-
+   
     COPY . /app
-
+   
     RUN pip install --no-cache-dir -r requirements.txt
 
     EXPOSE 8000 8501
-
+   
     CMD ["sh", "-c", "python app.py & streamlit run frontend.py --server.port 8501"]
 
 **3.Update Base Directory for Docker:**
-    Open app.py and set the base directory to /app, which is the working directory in the Docker container:
+  - Open app.py and set the base directory to /app, which is the working directory in the Docker container:
      
     - BASE_DIR = r"/app"
     - MODEL_PATH = os.path.join(BASE_DIR, 'churn_model.pkl')
     - SCALER_PATH = os.path.join(BASE_DIR, 'scaler.pkl')
     - FEATURES_PATH = os.path.join(BASE_DIR, 'feature_columns.pkl')
-- Save the changes. This ensures the model, scaler, and feature files are correctly referenced within the container.
+
 
 **4.Build the Docker Image:**
     Run the following command in the project directory:
@@ -132,7 +133,7 @@ To deploy the project in a Docker container on a Linux system, follow these step
    - Streamlit UI: http://localhost:8501
 
 **7.Notes"**
-    -  Ensure churn_model.pkl, scaler.pkl, and feature_columns.pkl are in the project root before building the Docker image, as they are copied into the /app directory.
+    -  Ensure **churn_model.pkl**, **scaler.pkl**, and **feature_columns.pkl** are in the project root before building the Docker image, as they are copied into the /app directory.
     -  If you need to modify paths for a different setup, update BASE_DIR in app.py accordingly before building the image.
 # How to Run (locally)
 
