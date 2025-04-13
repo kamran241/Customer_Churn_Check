@@ -121,12 +121,13 @@ To deploy the project in a Docker container on a Linux system, follow these step
 **4.Build the Docker Image:**
     Run the following command in the project directory:
     ```bash
-       docker build -t customer-churn-prediction .
+    
+    docker build -t customer-churn-prediction .
 
 **5.Run the Docker Container:**
   - Start the container, mapping ports for Flask (8000) and Streamlit (8501):
-    
-     -  docker run -p 8000:8000 -p 8501:8501 customer-churn-prediction
+    ```bash
+       docker run -p 8000:8000 -p 8501:8501 customer-churn-prediction
 
 **6.Access the Application:**
    - Flask API: http://localhost:8000
