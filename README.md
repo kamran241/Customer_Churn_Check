@@ -89,7 +89,7 @@ To deploy the project in a Docker container on a Linux system, follow these step
        sudo systemctl start docker
        sudo systemctl enable docker
  
- **verify install**
+**verify install**
       ```bash
       docker --version
 
@@ -120,7 +120,7 @@ To deploy the project in a Docker container on a Linux system, follow these step
 
 **4.Build the Docker Image:**
     Run the following command in the project directory:
-      ```bash
+         ```bash
          docker build -t customer-churn-prediction .
 
 **5.Run the Docker Container:**
