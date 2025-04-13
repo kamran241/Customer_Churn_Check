@@ -91,7 +91,7 @@ To deploy the project in a Docker container on a Linux system, follow these step
  
  **verify install**
       ```bash
-         docker --version
+      docker --version
 
 **2.Create a Dockerfile:**
   in the project root, create a file named Dockerfile with the following content:
@@ -124,7 +124,7 @@ To deploy the project in a Docker container on a Linux system, follow these step
          docker build -t customer-churn-prediction .
 
 **5.Run the Docker Container:**
-    Start the container, mapping ports for Flask (5000) and Streamlit (8501):
+    Start the container, mapping ports for Flask (8000) and Streamlit (8501):
        ```bash
           docker run -p 8000:8000 -p 8501:8501 customer-churn-prediction
 
@@ -134,7 +134,8 @@ To deploy the project in a Docker container on a Linux system, follow these step
 
 **7.Notes"**
     -  Ensure **churn_model.pkl**, **scaler.pkl**, and **feature_columns.pkl** are in the project root before building the Docker image, as they are copied into the /app directory.
-    -  If you need to modify paths for a different setup, update BASE_DIR in app.py accordingly before building the image.
+  
+      -  If you need to modify paths for a different setup, update BASE_DIR in app.py accordingly before building the image.
 # How to Run (locally)
 
 Once set up, run the application as follows:
