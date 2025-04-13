@@ -62,7 +62,8 @@ Follow these steps to set up the project on your local machine:
 7. **Update Base Directory**
 
      Open app.py in a text editor.
-     Change the base directory path from "C:\Users\kamra\OneDrive\Desktop\churn model" to your local project directory (e.g., /home/user/Customer_Churn_Check or C:\path\to\your\project).
+     Change the base directory path from **"C:\Users\kamra\OneDrive\Desktop\churn model"** to your local project directory (e.g., /home/user/Customer_Churn_Check or C:\path\to\your\project).
+    
       - For example, modify the following lines in app.py:
            - BASE_DIR = r"/path/to/your/project"  # Update this to your project directory
            - MODEL_PATH = os.path.join(BASE_DIR, 'churn_model.pkl')
@@ -81,12 +82,12 @@ Follow these steps to set up the project on your local machine:
 To deploy the project in a Docker container on a Linux system, follow these steps:
 
 **1.Ensure Docker is Installed:**
-  Install Docker if not already present:
+ - Install Docker if not already present:
     ```bash
-     sudo apt update
-     sudo apt install docker.io
-     sudo systemctl start docker
-     sudo systemctl enable docker
+       sudo apt update
+       sudo apt install docker.io
+       sudo systemctl start docker
+       sudo systemctl enable docker
  
  **verify install**
       ```bash
@@ -103,31 +104,31 @@ To deploy the project in a Docker container on a Linux system, follow these step
 
     RUN pip install --no-cache-dir -r requirements.txt
 
-     EXPOSE 8000 8501
+    EXPOSE 8000 8501
 
-   CMD ["sh", "-c", "python app.py & streamlit run frontend.py --server.port 8501"]
+    CMD ["sh", "-c", "python app.py & streamlit run frontend.py --server.port 8501"]
 
 **3.Update Base Directory for Docker:**
-  Open app.py and set the base directory to /app, which is the working directory in the Docker container:
+    Open app.py and set the base directory to /app, which is the working directory in the Docker container:
      
     - BASE_DIR = r"/app"
     - MODEL_PATH = os.path.join(BASE_DIR, 'churn_model.pkl')
     - SCALER_PATH = os.path.join(BASE_DIR, 'scaler.pkl')
     - FEATURES_PATH = os.path.join(BASE_DIR, 'feature_columns.pkl')
- Save the changes. This ensures the model, scaler, and feature files are correctly referenced within the container.
+- Save the changes. This ensures the model, scaler, and feature files are correctly referenced within the container.
 
 **4.Build the Docker Image:**
-  Run the following command in the project directory:
+    Run the following command in the project directory:
       ```bash
          docker build -t customer-churn-prediction .
 
 **5.Run the Docker Container:**
-   Start the container, mapping ports for Flask (5000) and Streamlit (8501):
+    Start the container, mapping ports for Flask (5000) and Streamlit (8501):
        ```bash
           docker run -p 8000:8000 -p 8501:8501 customer-churn-prediction
 
 **6.Access the Application:**
-   - Flask API: http://localhost:5000
+   - Flask API: http://localhost:8000
    - Streamlit UI: http://localhost:8501
 
 **7.Notes"**
@@ -151,13 +152,13 @@ Once set up, run the application as follows:
 ## Testing
 
 1. API:
-    Use test_data.csv with curl or Postman (see Test Data section).
+  -  Use test_data.csv with curl or Postman (see Test Data section).
 2. UI:
-    Upload test_data.csv in Streamlit or input data manually.
+  -  Upload test_data.csv in Streamlit or input data manually.
 
 ## Test Data
-  To test the model, a sample of dataset (test_data.csv) are provided in the repository.
-     Download: Find test data from the repo and download it and in **ui** give that data it will give you predictions.
+ - To test the model, a sample of dataset (test_data.csv) are provided in the repository.
+ - Download: Find test data from the repo and download it and in **ui** give that data it will give you predictions.
      
 ![Project Overview](https://github.com/kamran241/Customer_Churn_Check/blob/main/images/Screenshot%202025-04-13%20041231.png)
 
