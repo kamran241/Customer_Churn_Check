@@ -32,7 +32,8 @@ The following packages are required:
 | joblib        | 1.4.2   | Saving and loading trained models            |
 | streamlit     | 1.37.1  | Interactive web interface for users          |
 | Werkzeug      | 3.0.3   | Flask dependency for request handling        |
-
+| matplotlib    | 3.9.2   | Flask dependency for request handling        |
+| seaborn      | 0.3.2   | Flask dependency for request handling        |
 
 All dependencies are listed in `requirements.txt`.
 
