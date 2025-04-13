@@ -155,7 +155,7 @@ Once set up, run the application as follows:
 
 **1. API:**
   -  Use test_data.csv with curl or Postman (see Test Data section).
-**2. UI:**
+
   -  Upload test_data.csv in Streamlit or input data manually.
 
 ## Test Data
